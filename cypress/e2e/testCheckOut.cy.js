@@ -7,7 +7,7 @@ describe ('Checkout Page' , () => {
         checkOut.navigate();
     })
     it('Should amount validate and validate the checkout page', () => {
-        checkOut.validateTheCheckoutPage();
+        checkOut.validateTheCheckoutPage(faker.number.int({min:1, max:30}));
         checkOut.pay(faker.number.int({min:1, max:30}));
     })
 })
