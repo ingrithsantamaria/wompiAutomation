@@ -3,7 +3,7 @@ import { CheckOut } from "../pages/CheckOut";
 const checkOut = new CheckOut();
 
 describe ('Checkout Page' , () => {
-    before ('Navigate to checkout page', () => {
+    beforeEach ('Navigate to checkout page', () => {
         checkOut.navigate();
     })
     it('Should amount validate and validate the checkout page', () => {
