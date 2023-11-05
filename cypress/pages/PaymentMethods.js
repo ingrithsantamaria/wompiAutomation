@@ -23,4 +23,24 @@ export class PaymentMethods {
         cy.get('.src-components-PaymentMethod-__PaymentMethod__methodName__EpbVf').contains("Paga con QR Bancolombia").parent().click();
 
     }
+
+    navigateTransfer(){
+        cy.get('.src-components-PaymentMethod-__PaymentMethod__methodName__EpbVf').contains("Transfiere con tu cuenta ").parent().click();
+
+    }
+
+    navigateNequi(){
+        cy.get('.src-components-PaymentMethod-__PaymentMethod__methodName__EpbVf').contains("Paga con tu cuenta Nequi").parent().click();
+
+    }
+
+    navigatePse(){
+        cy.get('.src-components-PaymentMethod-__PaymentMethod__methodName__EpbVf').contains("Transfiere con tu cuenta de ahorros o corriente").parent().click();
+
+    }
+
+    navigateCash(){
+        cy.get('.src-components-PaymentMethod-__PaymentMethod__methodName__EpbVf').contains("Paga en efectivo en Corresponsal Bancario").parent().click();
+
+    }
 }

@@ -19,4 +19,25 @@ describe ('Methods Page', () => {
         paymentMethods.navigateQR()
     })
 
+
+    it('Should select payment with transfer', () => {
+        paymentMethods.validatePayAmount(amount)
+        paymentMethods.navigateTransfer();
+    })
+
+    it('Should select payment with nequi', () => {
+        paymentMethods.validatePayAmount(amount)
+        paymentMethods.navigateNequi();
+    })
+
+    it('Should select payment with PSE', () => {
+        paymentMethods.validatePayAmount(amount)
+        paymentMethods.navigatePse();
+    })
+
+    it('Should select payment with cash', () => {
+        paymentMethods.validatePayAmount(amount)
+        paymentMethods.navigateCash();
+    })
+
 })
